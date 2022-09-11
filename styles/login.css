@@ -56,3 +56,16 @@ input:focus{
 button{
     cursor: pointer;
 }
+
+
+@media (min-width: 600px){
+    main{
+        width: min(80%, 780px);
+        min-height: 430px;
+        padding: 20px 40px;
+    }
+
+    input{
+        margin-bottom: 40px;
+    }
+}
