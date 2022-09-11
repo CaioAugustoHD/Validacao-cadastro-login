@@ -38,6 +38,7 @@ button{
     display: block;
     margin: auto;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 footer{
@@ -53,10 +54,6 @@ input:focus{
     outline: 0;
 }
 
-button{
-    cursor: pointer;
-}
-
 
 @media (min-width: 600px){
     main{
@@ -67,5 +64,20 @@ button{
 
     input{
         margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1280px){
+    main{
+        padding: 3px 85px;
+        margin: 150px auto;
+    }
+
+    header{
+        padding: 35px 0;
+    }
+
+    input{
+        margin-bottom: 60px;
     }
 }
