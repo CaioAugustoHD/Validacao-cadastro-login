@@ -54,3 +54,18 @@ input:focus{
         margin-bottom: 40px;
     }
 }
+
+@media (min-width: 1280px){
+    main{
+        padding: 20px 85px 40px;
+        margin: 150px auto 0;
+    }
+
+    header{
+        padding: 35px 0;
+    }
+
+    input{
+        margin-bottom: 60px;
+    }
+}
