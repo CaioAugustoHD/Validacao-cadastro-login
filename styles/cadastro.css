@@ -35,12 +35,22 @@ button{
     display: block;
     margin: auto;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 input:focus{
     outline: 0;
 }
 
-button{
-    cursor: pointer;
+
+@media (min-width: 600px){
+    main{
+        width: min(80%, 780px);
+        min-height: 430px;
+        padding: 20px 40px;
+    }
+
+    input{
+        margin-bottom: 40px;
+    }
 }
