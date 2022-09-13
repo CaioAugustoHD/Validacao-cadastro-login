@@ -20,4 +20,6 @@ function cadastrar(){
 
     listaUsuarios.push(usuarioCadastrado);
     console.log(usuarioCadastrado);
+
+    localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
 }
