@@ -1,9 +1,11 @@
+const usuarioLog = document.getElementById('usuario');
+const senhaLog = document.getElementById('senha');
+
+
 let cadUsuario = document.getElementById('cadUsuario');
 let cadCPF = document.getElementById('cadCPF');
 let cadSenha = document.getElementById('cadSenha');
-let botaoCad = document.getElementById('botaoCad');
 
-botaoCad.addEventListener('click', validacao);
 
 let listaUsuarios = [];
 function lerListaUsuarios(){
@@ -24,6 +26,8 @@ function cadastrar(){
     listaUsuarios.push(usuarioCadastrado);
 
     localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
+
+    window.location.replace('http://127.0.0.1:5500/src/login.html');
 }
 
 function validacao(){
@@ -65,5 +69,34 @@ function validacao(){
 
     if((usuarioValido) && (cpfValido) && (senhaValida)){
         cadastrar();
+    }
+}
+
+function login(){
+
+    lerListaUsuarios();
+
+    let verificacaoLogin = false;
+    listaUsuarios.forEach((usuario) => {
+        if((usuarioLog.value == usuario.usuario) && (senhaLog.value == usuario.senha)){
+            console.log('logadooo');
+            let usuarioLogado = {
+                usuarioLog : usuario.usuario,
+                cpfLog : usuario.cpf,
+                senhaLog : usuario.senha
+            }
+
+            localStorage.setItem('lojaLogada', JSON.stringify(usuarioLogado));
+
+            verificacaoLogin = true;
+
+            window.location.replace('http://127.0.0.1:5500/src/home.html');
+        }
+    })
+
+    if(verificacaoLogin){
+        return;
+    } else {
+        alert('Usuário ou senha inválido!');
     }
 }
