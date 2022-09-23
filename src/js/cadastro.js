@@ -1,11 +1,14 @@
 let cadUsuario = document.getElementById('cadUsuario');
 let cadCPF = document.getElementById('cadCPF');
 let cadSenha = document.getElementById('cadSenha');
-let botao = document.querySelector('button');
+let botaoCad = document.getElementById('botaoCad');
 
-botao.addEventListener('click', cadastrar);
+botaoCad.addEventListener('click', cadastrar);
 
 let listaUsuarios = [];
+function lerListaUsuarios(){
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios') || '[]');
+}
 
 class novoUsuario {
     constructor(usuario, cpf, senha){
@@ -18,8 +21,8 @@ class novoUsuario {
 function cadastrar(){
     let usuarioCadastrado = new novoUsuario (cadUsuario.value, cadCPF.value, cadSenha.value);
 
+    lerListaUsuarios();
     listaUsuarios.push(usuarioCadastrado);
-    console.log(usuarioCadastrado);
 
     localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
 }
