@@ -86,7 +86,7 @@ function login(){
                 senhaLog : usuario.senha
             }
 
-            localStorage.setItem('lojaLogada', JSON.stringify(usuarioLogado));
+            localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
 
             verificacaoLogin = true;
 
