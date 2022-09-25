@@ -5,8 +5,16 @@ if(localStorage.getItem('usuarioLogado') == null){
 
 const spanUsuario = document.getElementById('spanUsuario');
 const spanCpf = document.getElementById('spanCpf');
+const botaoLogout = document.getElementById('botaoLogout');
+botaoLogout.addEventListener('click', logout);
 
 let usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 
 spanUsuario.innerHTML = usuarioLogado.usuarioLog;
 spanCpf.innerHTML = usuarioLogado.cpfLog;
+
+function logout(){
+
+    localStorage.removeItem('usuarioLogado');
+    window.location.replace('http://127.0.0.1:5500/src/login.html');
+}
