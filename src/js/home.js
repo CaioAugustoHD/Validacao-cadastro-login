@@ -14,7 +14,6 @@ spanUsuario.innerHTML = usuarioLogado.usuarioLog;
 spanCpf.innerHTML = usuarioLogado.cpfLog;
 
 function logout(){
-
     localStorage.removeItem('usuarioLogado');
     window.location.replace('http://127.0.0.1:5500/src/login.html');
 }
