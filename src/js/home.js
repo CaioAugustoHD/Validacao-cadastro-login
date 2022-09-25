@@ -6,4 +6,7 @@ if(localStorage.getItem('usuarioLogado') == null){
 const spanUsuario = document.getElementById('spanUsuario');
 const spanCpf = document.getElementById('spanCpf');
 
+let usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 
+spanUsuario.innerHTML = usuarioLogado.usuarioLog;
+spanCpf.innerHTML = usuarioLogado.cpfLog;
