@@ -20,7 +20,8 @@ main{
     min-height: 250px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start
+    align-items: flex-start;
+    box-shadow: 1px 1px 10px #000;
 }
 
 main div{

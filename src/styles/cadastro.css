@@ -8,10 +8,14 @@
 
 main{
     background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
-    margin: 100px auto;
     padding: 10px;
     border-radius: 4px;
+    box-shadow: 1px 1px 10px #000;
 }
 
 header{
@@ -53,7 +57,7 @@ button:hover{
 }
 
 input:focus{
-    outline: 0;
+    outline: 2px solid #000;
 }
 
 
@@ -72,7 +76,6 @@ input:focus{
 @media (min-width: 1280px){
     main{
         padding: 20px 85px 40px;
-        margin: 150px auto 0;
     }
 
     header{
