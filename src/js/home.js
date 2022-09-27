@@ -1,6 +1,6 @@
 if(localStorage.getItem('usuarioLogado') == null){
     alert('Você precisa fazer login!');
-    window.location.replace('/src/login.html');
+    window.location.replace('./login.html');
 }
 
 const spanUsuario = document.getElementById('spanUsuario');
