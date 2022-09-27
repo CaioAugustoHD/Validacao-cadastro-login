@@ -1,5 +1,5 @@
 if(localStorage.getItem('usuarioLogado')){
-    window.location.replace('http://127.0.0.1:5500/src/home.html');
+    window.location.replace('/src/home.html');
 }
 
 const usuarioLog = document.getElementById('usuario');
@@ -31,7 +31,7 @@ function cadastrar(){
 
     localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
 
-    window.location.replace('http://127.0.0.1:5500/src/login.html');
+    window.location.replace('/src/login.html');
 }
 
 function validacao(){
@@ -94,7 +94,7 @@ function login(){
 
             verificacaoLogin = true;
 
-            window.location.replace('http://127.0.0.1:5500/src/home.html');
+            window.location.replace('/src/home.html');
         }
     })
 
