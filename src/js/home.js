@@ -1,5 +1,4 @@
 if(localStorage.getItem('usuarioLogado') == null){
-    alert('Você precisa fazer login!');
     window.location.replace('./login.html');
 }
 
@@ -15,5 +14,5 @@ spanCpf.innerHTML = usuarioLogado.cpfLog;
 
 function logout(){
     localStorage.removeItem('usuarioLogado');
-    window.location.replace('http://127.0.0.1:5500/src/login.html');
+    window.location.replace('./login.html');
 }
