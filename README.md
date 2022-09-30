@@ -1,5 +1,5 @@
 <h1 align="center">Validação de cadastro e login</h1>
-<p align="center">Sistema que permite o usuário fazer seu cadastro e login. Em ambos, há um sistema de validação dos dados do usuário. Projeto feito com HTML, CSS e JavaScript.</p>
+<p align="center">Sistema que permite o usuário fazer seu cadastro e login, com validação dos dados cadastrados. Projeto feito com HTML, CSS e JavaScript.</p>
 
 ---
 
@@ -18,7 +18,7 @@
 
 
 ## Sobre
-Esse projeto foi criado com o objetivo de aprender e praticar sobre armazenar dados no localStorage e também fazer um sistema de cadastro e login. Consiste em validar os dados do usuário para realizar seu cadastro e ao fazer o login, verifica se o usuário está cadastrado ou não.
+Esse projeto foi criado com o objetivo de aprender e praticar sobre armazenar dados no localStorage, trabalhar com classes e também com programação orientada a objetos. Consiste em validar os dados do usuário para realizar seu cadastro e ao fazer o login, verifica se o usuário está cadastrado ou não.
 
 
 ## Funcionalidades
