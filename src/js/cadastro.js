@@ -1,5 +1,5 @@
 if(localStorage.getItem('usuarioLogado')){
-    window.location.replace('./home.html');
+    window.location.replace('./index.html');
 }
 
 const usuarioLog = document.getElementById('usuario');
@@ -83,7 +83,6 @@ function login(){
     let verificacaoLogin = false;
     listaUsuarios.forEach((usuario) => {
         if((usuarioLog.value == usuario.usuario) && (senhaLog.value == usuario.senha)){
-            console.log('logadooo');
             let usuarioLogado = {
                 usuarioLog : usuario.usuario,
                 cpfLog : usuario.cpf,
@@ -94,7 +93,7 @@ function login(){
 
             verificacaoLogin = true;
 
-            window.location.replace('./home.html');
+            window.location.replace('./index.html');
         }
     })
 
