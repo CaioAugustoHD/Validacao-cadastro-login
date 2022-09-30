@@ -13,7 +13,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    width: 90%;
+    width: max(90%, 262px);
     padding: 10px;
     display: flex;
     flex-direction: column;

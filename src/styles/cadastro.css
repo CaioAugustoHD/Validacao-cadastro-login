@@ -12,7 +12,7 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: max(90%, 262px);
     padding: 10px;
     border-radius: 4px;
     box-shadow: 1px 1px 10px #000;
